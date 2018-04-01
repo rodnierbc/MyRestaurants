@@ -1,9 +1,9 @@
 package com.epicodus.myrestaurants.models;
 
-
 import org.parceler.Parcel;
 
 import java.util.ArrayList;
+import java.util.List;
 
 @Parcel
 public class Restaurant {
@@ -12,17 +12,14 @@ public class Restaurant {
     String website;
     double rating;
     String imageUrl;
-    ArrayList<String> address = new ArrayList<>();
+    List<String> address = new ArrayList<>();
     double latitude;
     double longitude;
-    ArrayList<String> categories = new ArrayList<>();
+    List<String> categories = new ArrayList<>();
 
     public Restaurant() {}
 
-    public Restaurant(String name, String phone, String website,
-                      double rating, String imageUrl, ArrayList<String> address,
-                      double latitude, double longitude, ArrayList<String> categories) {
-
+    public Restaurant(String name, String phone, String website, double rating, String imageUrl, ArrayList<String> address, double latitude, double longitude, ArrayList<String> categories) {
         this.name = name;
         this.phone = phone;
         this.website = website;
@@ -43,18 +40,18 @@ public class Restaurant {
     }
 
     public String getWebsite() {
-        return  website;
+        return website;
     }
 
     public double getRating() {
         return rating;
     }
 
-    public String getImageUrl(){
+    public String getImageUrl() {
         return imageUrl;
     }
 
-    public ArrayList<String> getAddress() {
+    public List<String> getAddress() {
         return address;
     }
 
@@ -66,8 +63,7 @@ public class Restaurant {
         return longitude;
     }
 
-    public ArrayList<String> getCategories() {
+    public List<String> getCategories() {
         return categories;
     }
 }
-
